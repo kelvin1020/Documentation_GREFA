@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to GREFA's documentation!
+欢迎来到GREFA的文档!
 =================================
 
 .. toctree::
@@ -12,7 +12,7 @@ Welcome to GREFA's documentation!
 
 
 
-Indices and tables
+索引和表格
 ==================
 
 * :ref:`genindex`
