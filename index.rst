@@ -28,6 +28,7 @@ Gravitational wave and relativistic fundamental astronomy group(GREFA Group) is 
 软件(Software)
 ------------
  .. toctree::
+   :maxdepth: 2
 
    pyCBC.rst
    bilby.rst
