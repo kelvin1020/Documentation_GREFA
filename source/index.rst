@@ -32,7 +32,6 @@ Gravitational wave and relativistic fundamental astronomy group(GREFA Group) is 
 
    bilby.rst
    pycbc.rst
-
    
 
 ------------

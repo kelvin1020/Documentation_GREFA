@@ -3,51 +3,46 @@
 =================================
 
 ----------------------------
-登录
+服务器登录
 ----------------------------
-- ssh 
+- mac或Linux系统
 
+使用终端，输入
 
+.. code-block:: console
 
+		$ ssh your_user_name@119.78.226.66
+		
+
+根据提示输入密码即可登录。
+
+- windows系统
+
+推荐使用xshell和xftp软件
+
+ 
 ----------------------------
-conda 环境配置
+ifort编译器配置
 ----------------------------
-
-
-
 
 在终端中输入 ``vi ~/.bashrc`` 按 **i** 进入编辑模式， 复制粘贴以下代码
 
-``export PATH="/bin/anaconda3/bin:$PATH"``
+``source /opt/intel/oneapi/setvars.sh``
 
 按 **ESC** 退出编辑模式，按 **:** 进入命令模式，输入 **wq** 退出vim编辑
 
 在终端中输入 ``source ~/.bashrc``
-即配置了conda的路径，输入 ``conda init`` 会显示：
 
-no change     /bin/anaconda3/condabin/conda
-no change     /bin/anaconda3/bin/conda
-no change     /bin/anaconda3/bin/conda-env
-no change     /bin/anaconda3/bin/activate
-no change     /bin/anaconda3/bin/deactivate
-no change     /bin/anaconda3/etc/profile.d/conda.sh
-no change     /bin/anaconda3/etc/fish/conf.d/conda.fish
-no change     /bin/anaconda3/shell/condabin/Conda.psm1
-no change     /bin/anaconda3/shell/condabin/conda-hook.ps1
-no change     /bin/anaconda3/lib/python3.7/site-packages/xontrib/conda.xsh
-no change     /bin/anaconda3/etc/profile.d/conda.csh
-modified      /home/test/.bashrc
-
-==> For changes to take effect, close and re-open your current shell. <==
-
-根据提示关闭并重启终端，即配置好了conda环境，可以用于创建不同的python环境。
-
-重新登录后，命令提示变为 ``(base) [[username]@HPz820 ~]$`` ，默认的python版本为python3， 安装了pycbc 和lal
+即配置好ifort编译器环境。
 
 
-执行
-``conda deactivate`` 即可进入python2 环境， 使用python2 (但是用不了lal)
+------------------------------------
+服务器远程运行jupyter Notebook
+------------------------------------
 
-执行
-``conda activate`` 即可再次进入python3 环境， 使用python3
+服务器可远程运行jupyter Notebook，方法如下:
+
+
+
+
 
